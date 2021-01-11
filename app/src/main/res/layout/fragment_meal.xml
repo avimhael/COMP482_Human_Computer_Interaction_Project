@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/craveblack"
+    tools:context=".HomeFragment">
+
+
+    <ImageButton
+        android:id="@+id/mealLogo"
+        android:layout_width="60dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="4dp"
+        android:padding="5sp"
+        android:layout_marginBottom="522dp"
+        android:contentDescription="logo"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mealText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mealAdverts" />
+
+    <ImageView
+        android:id="@+id/mealAdverts"
+        android:layout_width="411dp"
+        android:layout_height="137dp"
+        android:textColor="@color/cravewhite"
+        android:scaleType="fitXY"
+        android:src="@drawable/advert"
+        app:layout_constraintBottom_toTopOf="@+id/mealLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/mealText"
+        android:layout_width="343dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="520dp"
+        android:background="@color/craveblack"
+        android:gravity="center"
+        android:text="Please choose from the options below to add items to your combo!"
+        android:textAlignment="center"
+        android:textColor="@color/cravewhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mealLogo"
+        app:layout_constraintTop_toBottomOf="@+id/mealAdverts" />
+
+    <Button
+        android:id="@+id/mealCancel"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Cancel"
+        android:textSize="8sp"
+        android:textColor="@color/craveblack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dineInButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/mealCheckout"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Checkout"
+        android:textSize="8sp"
+        android:textColor="@color/craveblack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/takeAwayButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/mealHelp"
+        android:layout_width="56dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="339dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/cravegreen"
+        android:text="Help"
+        android:textSize="8sp"
+        android:textColor="@color/cravewhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/quickScroll7"
+        android:layout_width="60dp"
+        android:layout_height="521dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mealLogo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/burgScroll20"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg4" />
+
+            <ImageView
+                android:id="@+id/burgScroll21"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg3" />
+
+            <ImageView
+                android:id="@+id/burgScroll22"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg1" />
+
+            <ImageView
+                android:id="@+id/burgScroll23"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg2" />
+
+            <ImageView
+                android:id="@+id/burgScroll24"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg5" />
+
+            <ImageView
+                android:id="@+id/burgScroll25"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg6" />
+
+            <ImageView
+                android:id="@+id/burgScroll26"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg7" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/burgChoice"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/burgersel1"
+        app:layout_constraintEnd_toStartOf="@+id/choiceText"
+        app:layout_constraintStart_toEndOf="@+id/quickScroll7"
+        app:layout_constraintTop_toBottomOf="@+id/myItemsText"
+        app:srcCompat="@drawable/burgersel1" />
+
+    <TextView
+        android:id="@+id/choiceText"
+        android:layout_width="146dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:text="Angus Burger w/ specialty bun"
+        android:textColor="@color/cravewhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/priceView1"
+        app:layout_constraintStart_toEndOf="@+id/burgChoice"
+        app:layout_constraintTop_toBottomOf="@+id/myItemsText" />
+
+    <ImageView
+        android:id="@+id/burgCombo"
+        android:layout_width="84dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/combo"
+        app:layout_constraintStart_toEndOf="@+id/quickScroll7"
+        app:layout_constraintTop_toBottomOf="@+id/myAddonsText" />
+
+    <TextView
+        android:id="@+id/priceView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginEnd="16dp"
+        android:text="$X.xx"
+        android:textColor="@color/cravewhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/burgChoice"
+        app:layout_constraintTop_toBottomOf="@+id/choiceText" />
+
+    <TextView
+        android:id="@+id/priceView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="107dp"
+        android:text="$X.xx"
+        android:textColor="@color/cravewhite"
+        app:layout_constraintBottom_toTopOf="@+id/priceView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toEndOf="@+id/burgCombo"
+        app:layout_constraintTop_toBottomOf="@+id/priceView1" />
+
+    <TextView
+        android:id="@+id/cartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="16dp"
+        android:text="Shopping Cart"
+        android:textColor="@color/cravewhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/mealCancel"
+        app:layout_constraintEnd_toStartOf="@+id/priceView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/comboOptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="158dp"
+        android:text="Fries w/ drink"
+        android:textColor="@color/cravewhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/mealHelp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/burgCombo"
+        app:layout_constraintTop_toBottomOf="@+id/choiceText" />
+
+    <TextView
+        android:id="@+id/priceView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginBottom="12dp"
+        android:text="$X.xx"
+        android:textColor="@color/cravewhite"
+        app:layout_constraintBottom_toTopOf="@+id/mealHelp"
+        app:layout_constraintStart_toEndOf="@+id/cartText" />
+
+    <TextView
+        android:id="@+id/myItemsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="29dp"
+        android:text="Your Current Items:"
+        android:textColor="@color/cravewhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/burgChoice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quickScroll7"
+        app:layout_constraintTop_toBottomOf="@+id/mealText" />
+
+    <TextView
+        android:id="@+id/myAddonsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="231dp"
+        android:layout_marginBottom="20dp"
+        android:text="Add-Ons:"
+        android:textColor="@color/cravewhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/burgCombo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quickScroll7"
+        app:layout_constraintTop_toBottomOf="@+id/burgChoice" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pay2Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/craveblack"
+    tools:context=".Pay2Fragment">
+
+
+    <ImageView
+        android:id="@+id/pay2Logo"
+        android:layout_width="411dp"
+        android:layout_height="222dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="logo"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo1"
+        app:layout_constraintBottom_toTopOf="@+id/pay2Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pay2Text"
+        android:layout_width="213dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/craveblack"
+        android:gravity="center"
+        android:text="Your Total Is: $ X.xx"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pay2Logo" />
+
+    <Button
+        android:id="@+id/pay2Return"
+        android:layout_width="222dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="164dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Cancel"
+        android:textColor="@color/craveblack"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/pay2Help"
+        android:layout_width="56dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="339dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="Help"
+        android:textColor="@color/cravewhite"
+        android:textSize="8sp"
+        android:backgroundTint="@color/cravegreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/pay2Item1"
+        android:layout_width="364dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/cravewhite"
+        android:text="Pay at the Cash // Pay Utilizing Machine"
+        android:textColor="@color/craveblack"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/pay2Return"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

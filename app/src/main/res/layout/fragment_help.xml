@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/helpLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/craveblack"
+    tools:context=".HelpFragment">
+
+
+    <ImageView
+        android:id="@+id/helpLogo"
+        android:layout_width="411dp"
+        android:layout_height="222dp"
+        android:contentDescription="logo"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/helpReturn"
+        android:layout_width="222dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Return"
+        android:textColor="@color/craveblack"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/helpItem1"
+        android:layout_width="364dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/cravewhite"
+        android:text="Help Item 1"
+        android:textColor="@color/craveblack"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/helpItem2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helpLogo" />
+
+    <Button
+        android:id="@+id/helpItem2"
+        android:layout_width="364dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/cravewhite"
+        android:text="Help Item 2"
+        android:textColor="@color/craveblack"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helpItem1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

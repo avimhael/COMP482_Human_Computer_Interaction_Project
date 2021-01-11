@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcomeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F1A17"
+    tools:context=".WelcomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/homeLogo"
+        android:layout_width="411dp"
+        android:layout_height="222dp"
+        android:layout_marginBottom="507dp"
+        android:contentDescription="logo"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="408dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="36dp"
+        android:text="Welcome to Crave Burger! Thanks for trying out new digital kiosk ordering system. We hope this makes your ordering experience quicker and easier."
+        android:textAlignment="center"
+        android:textColor="#FCFDFF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/dineInButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/homeEnglish"
+        android:layout_width="56dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/cravelang"
+        android:text="EN"
+        android:textColor="#FCFDFF"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/homeFrench"
+        android:layout_width="56dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="264dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/cravelang"
+        android:text="FR"
+        android:textColor="#FCFDFF"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/homeHelp"
+        android:layout_width="56dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="339dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#08491D"
+        android:text="Help"
+        android:textColor="#FCFDFF"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/dineInButton"
+        android:layout_width="100dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="57dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Dine In"
+        android:textColor="@color/craveblack"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeFrench"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/takeAwayButton"
+        android:layout_width="100dp"
+        android:layout_height="260dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="#FE9900"
+        android:text="Take Away"
+        android:textColor="@color/craveblack"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

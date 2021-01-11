@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/craveblack"
+    tools:context=".HomeFragment">
+
+
+    <ImageView
+        android:id="@+id/homeLogo"
+        android:layout_width="60dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="522dp"
+        android:contentDescription="logo"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeAdverts" />
+
+    <ImageView
+        android:id="@+id/homeAdverts"
+        android:layout_width="411dp"
+        android:layout_height="137dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/advert"
+        app:layout_constraintBottom_toTopOf="@+id/homeLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/reviewText"
+        android:layout_width="349dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="520dp"
+        android:background="@color/craveblack"
+        android:gravity="center"
+        android:text="Choose from our delicious selections!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/homeLogo"
+        app:layout_constraintTop_toBottomOf="@+id/homeAdverts"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/homeCancel"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Cancel"
+        android:textColor="@color/craveblack"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dineInButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/homeCheckout"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Checkout"
+        android:textSize="8sp"
+        android:textColor="@color/craveblack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/takeAwayButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/home1Help"
+        android:layout_width="56dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="339dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/cravewhite"
+        android:backgroundTint="@color/cravegreen"
+        android:text="Help"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/quickScroll1"
+        android:layout_width="60dp"
+        android:layout_height="518dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/quickScroll2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeLogo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/burgScrolla"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg5" />
+
+            <ImageView
+                android:id="@+id/burgScroll0"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg4" />
+
+            <ImageView
+                android:id="@+id/burgScroll1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg1" />
+
+            <ImageView
+                android:id="@+id/burgScroll2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg2" />
+
+            <ImageView
+                android:id="@+id/burgScroll3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg3" />
+
+            <ImageView
+                android:id="@+id/burgScroll4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg6" />
+
+            <ImageView
+                android:id="@+id/burgScroll5"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg7" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/quickScroll2"
+        android:layout_width="60dp"
+        android:layout_height="420dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reviewText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/drinkScrolla"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink1" />
+
+            <ImageView
+                android:id="@+id/drinkScroll0"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink2" />
+
+            <ImageView
+                android:id="@+id/drinkScrol1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink3" />
+
+            <ImageView
+                android:id="@+id/drinkScroll2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink4" />
+
+            <ImageView
+                android:id="@+id/drinkScroll3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink5" />
+
+            <ImageView
+                android:id="@+id/drinkScroll4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink6" />
+
+            <ImageView
+                android:id="@+id/drinkScroll5"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink7"
+                app:srcCompat="@drawable/scrolldrink7" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/burgerMenuNav"
+        android:layout_width="111dp"
+        android:layout_height="210dp"
+        android:padding="5sp"
+        android:layout_marginStart="35dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/burger"
+        app:layout_constraintEnd_toStartOf="@+id/softDrinkMenuNav"
+        app:layout_constraintStart_toEndOf="@+id/quickScroll1"
+        app:layout_constraintTop_toBottomOf="@+id/reviewText" />
+
+    <ImageButton
+        android:id="@+id/softDrinkMenuNav"
+        android:layout_width="111dp"
+        android:layout_height="210dp"
+        android:layout_marginEnd="32dp"
+        android:padding="5sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/softdrink"
+        app:layout_constraintEnd_toStartOf="@+id/quickScroll2"
+        app:layout_constraintStart_toEndOf="@+id/burgerMenuNav"
+        app:layout_constraintTop_toBottomOf="@+id/reviewText" />
+
+    <ImageView
+        android:id="@+id/coffeeMenuNav"
+        android:layout_width="111dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="36dp"
+        android:scaleType="fitXY"
+        android:padding="5sp"
+        android:src="@drawable/coffee"
+        app:layout_constraintEnd_toStartOf="@+id/dessertMenuNav"
+        app:layout_constraintStart_toEndOf="@+id/quickScroll1"
+        app:layout_constraintTop_toBottomOf="@+id/burgerMenuNav" />
+
+    <ImageView
+        android:id="@+id/dessertMenuNav"
+        android:layout_width="111dp"
+        android:layout_height="210dp"
+        android:layout_marginEnd="32dp"
+        android:padding="5sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dessert"
+        app:layout_constraintEnd_toStartOf="@+id/quickScroll2"
+        app:layout_constraintTop_toBottomOf="@+id/softDrinkMenuNav" />
+
+    <TextView
+        android:id="@+id/homeCartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="15dp"
+        android:text="Shopping Cart"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/homeCancel"
+        app:layout_constraintEnd_toStartOf="@+id/totalPriceText"
+        app:layout_constraintStart_toEndOf="@+id/quickScroll1"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeMenuNav"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/totalPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="$X.xx"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/homeHelp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dessertMenuNav" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

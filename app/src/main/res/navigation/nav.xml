@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/drinksFragment"
+        android:name="com.burger.crave.DrinksFragment"
+        android:label="fragment_drinks"
+        tools:layout="@layout/fragment_drinks" >
+        <action
+            android:id="@+id/action_drinksFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_drinksFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_drinksFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+        <action
+            android:id="@+id/action_drinksFragment_to_mealFragment"
+            app:destination="@id/mealFragment" />
+        <action
+            android:id="@+id/action_drinksFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.burger.crave.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" >
+        <action
+            android:id="@+id/action_helpFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.burger.crave.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_sandwichFragment"
+            app:destination="@id/sandwichFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_drinksFragment"
+            app:destination="@id/drinksFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mealFragment"
+        android:name="com.burger.crave.MealFragment"
+        android:label="fragment_meal"
+        tools:layout="@layout/fragment_meal" >
+        <action
+            android:id="@+id/action_mealFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_mealFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+        <action
+            android:id="@+id/action_mealFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_mealFragment_to_sandwichFragment"
+            app:destination="@id/sandwichFragment" />
+        <action
+            android:id="@+id/action_mealFragment_to_drinksFragment"
+            app:destination="@id/drinksFragment" />
+        <action
+            android:id="@+id/action_mealFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pay1Fragment"
+        android:name="com.burger.crave.Pay1Fragment"
+        android:label="fragment_pay1"
+        tools:layout="@layout/fragment_pay1" >
+        <action
+            android:id="@+id/action_pay1Fragment_to_pay2Fragment"
+            app:destination="@id/pay2Fragment" />
+        <action
+            android:id="@+id/action_pay1Fragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_pay1Fragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_pay1Fragment_to_seeyaFragment"
+            app:destination="@id/seeyaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pay2Fragment"
+        android:name="com.burger.crave.Pay2Fragment"
+        android:label="fragment_pay2"
+        tools:layout="@layout/fragment_pay2" >
+        <action
+            android:id="@+id/action_pay2Fragment_to_seeyaFragment"
+            app:destination="@id/seeyaFragment" />
+        <action
+            android:id="@+id/action_pay2Fragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_pay2Fragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="com.burger.crave.ReviewFragment"
+        android:label="fragment_review"
+        tools:layout="@layout/fragment_review" >
+        <action
+            android:id="@+id/action_reviewFragment_to_sandwichFragment"
+            app:destination="@id/sandwichFragment" />
+        <action
+            android:id="@+id/action_reviewFragment_to_drinksFragment"
+            app:destination="@id/drinksFragment" />
+        <action
+            android:id="@+id/action_reviewFragment_to_mealFragment"
+            app:destination="@id/mealFragment" />
+        <action
+            android:id="@+id/action_reviewFragment_to_pay1Fragment"
+            app:destination="@id/pay1Fragment" />
+        <action
+            android:id="@+id/action_reviewFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_reviewFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_reviewFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seeyaFragment"
+        android:name="com.burger.crave.SeeyaFragment"
+        android:label="fragment_seeya"
+        tools:layout="@layout/fragment_seeya" />
+    <fragment
+        android:id="@+id/sandwichFragment"
+        android:name="com.burger.crave.SandwichFragment"
+        android:label="fragment_sandwich"
+        tools:layout="@layout/fragment_sandwich" >
+        <action
+            android:id="@+id/action_sandwichFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_sandwichFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+        <action
+            android:id="@+id/action_sandwichFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_sandwichFragment_to_mealFragment"
+            app:destination="@id/mealFragment" />
+        <action
+            android:id="@+id/action_sandwichFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.burger.crave.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/burgerOptionsFragment"
+        android:name="com.burger.crave.BurgerOptionsFragment"
+        android:label="fragment_burger_options"
+        tools:layout="@layout/fragment_burger_options" />
+    <fragment
+        android:id="@+id/drinksOptionsFragment"
+        android:name="com.burger.crave.DrinksOptionsFragment"
+        android:label="fragment_drinks_options"
+        tools:layout="@layout/fragment_drinks_options" />
+</navigation>

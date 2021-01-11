@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drinksLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/craveblack"
+    tools:context=".DrinksFragment">
+
+
+    <ImageButton
+        android:id="@+id/drinksLogo"
+        android:layout_width="60dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="522dp"
+        android:contentDescription="logo"
+        android:padding="5sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drinksAdverts" />
+
+    <ImageView
+        android:id="@+id/drinksAdverts"
+        android:layout_width="411dp"
+        android:layout_height="137dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/advert"
+        app:layout_constraintBottom_toTopOf="@+id/drinksLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:id="@+id/drinkChoiceScroll"
+        android:layout_width="246dp"
+        android:layout_height="414dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/drinksCartText"
+        app:layout_constraintEnd_toStartOf="@+id/quickScroll6"
+        app:layout_constraintStart_toEndOf="@+id/quickScroll5"
+        app:layout_constraintTop_toBottomOf="@+id/drinksText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink1" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="30dp"
+                    android:padding="5sp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink2" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="30dp"
+                    android:padding="5sp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink4" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink5" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="30dp"
+                    android:padding="5sp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink7" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink1" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink3" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:padding="5sp"
+                    app:srcCompat="@drawable/scrolldrink4" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:padding="5sp"
+                    app:srcCompat="@drawable/scrolldrink3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink5" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink6" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink1" />
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink2" />
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink1" />
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink2" />
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrolldrink3" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/drinksText"
+        android:layout_width="352dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="520dp"
+        android:background="@color/craveblack"
+        android:gravity="center"
+        android:text="Try one of our refreshing soft drinks!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/drinksLogo"
+        app:layout_constraintTop_toBottomOf="@+id/drinksAdverts" />
+
+    <Button
+        android:id="@+id/drinksCancel"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Cancel"
+        android:textSize="8sp"
+        android:textColor="@color/craveblack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dineInButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/drinksCheckout"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Checkout"
+        android:textSize="8sp"
+        android:textColor="@color/craveblack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/takeAwayButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/drinksHelp"
+        android:layout_width="56dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="339dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/cravegreen"
+        android:text="Help"
+        android:textColor="@color/cravewhite"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/quickScroll5"
+        android:layout_width="60dp"
+        android:layout_height="524dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drinksLogo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/burgScroll13"
+                android:padding="5sp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg4" />
+
+            <ImageView
+                android:id="@+id/burgScroll14"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg3" />
+
+            <ImageView
+                android:id="@+id/burgScroll15"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg1" />
+
+            <ImageView
+                android:id="@+id/burgScroll16"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:padding="5sp"
+                android:src="@drawable/scrollburg2" />
+
+            <ImageView
+                android:id="@+id/burgScroll17"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:padding="5sp"
+                android:src="@drawable/scrollburg5" />
+
+            <ImageView
+                android:id="@+id/burgScroll18"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg6" />
+
+            <ImageView
+                android:id="@+id/burgScroll19"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg7" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/quickScroll6"
+        android:layout_width="60dp"
+        android:layout_height="418dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/drinksHelp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drinksText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/drinkScroll13"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink1" />
+
+            <ImageView
+                android:id="@+id/drinkScroll4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink2" />
+
+            <ImageView
+                android:id="@+id/drinkScrol15"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink3" />
+
+            <ImageView
+                android:id="@+id/drinkScroll6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink4" />
+
+            <ImageView
+                android:id="@+id/drinkScroll7"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink5" />
+
+            <ImageView
+                android:id="@+id/drinkScroll18"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink6" />
+
+            <ImageView
+                android:id="@+id/drinkScroll19"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink7"
+                app:srcCompat="@drawable/scrolldrink7" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/drinksCartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="434dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="15dp"
+        android:text="Shopping Cart"
+        android:textColor="#F4ECEC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/drinksCancel"
+        app:layout_constraintEnd_toStartOf="@+id/drinksTotalText"
+        app:layout_constraintStart_toEndOf="@+id/quickScroll5"
+        app:layout_constraintTop_toBottomOf="@+id/drinksLogo" />
+
+    <TextView
+        android:id="@+id/drinksTotalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="$X.xx"
+        android:textColor="#F3EAEA"
+        app:layout_constraintBottom_toTopOf="@+id/drinksHelp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quickScroll6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

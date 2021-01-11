@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sandwichLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/craveblack"
+    tools:context=".SandwichFragment">
+
+
+    <ImageButton
+        android:id="@+id/sandwichLogo"
+        android:layout_width="60dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="348dp"
+        android:layout_marginBottom="522dp"
+        android:contentDescription="logo"
+        android:scaleType="fitXY"
+        android:padding="5sp"
+        android:src="@drawable/logo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandwichAdverts" />
+
+    <ImageView
+        android:id="@+id/sandwichAdverts"
+        android:layout_width="411dp"
+        android:layout_height="137dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/advert"
+        app:layout_constraintBottom_toTopOf="@+id/sandwichLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/sandText"
+        android:layout_width="351dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="520dp"
+        android:background="@color/craveblack"
+        android:gravity="center"
+        android:text="Our sandwiches have won numerous awards!"
+        android:textAlignment="center"
+        android:textColor="@color/cravewhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/sandwichLogo"
+        app:layout_constraintTop_toBottomOf="@+id/sandwichAdverts"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/sandwichCancel"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Cancel"
+        android:textSize="8sp"
+        android:textColor="@color/craveblack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dineInButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/sandwichCheckout"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Checkout"
+        android:textSize="8sp"
+        android:textColor="@color/craveblack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/takeAwayButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/sandwichHelp"
+        android:layout_width="56dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="339dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FCFDFF"
+        android:backgroundTint="@color/cravegreen"
+        android:text="Help"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/burgerChoiceScroll"
+        android:layout_width="246dp"
+        android:layout_height="414dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/sandCartText"
+        app:layout_constraintEnd_toStartOf="@+id/quickScroll4"
+        app:layout_constraintStart_toEndOf="@+id/quickScroll3"
+        app:layout_constraintTop_toBottomOf="@+id/sandwichLogo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:padding="5sp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrollburg1" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="30dp"
+                    android:padding="5sp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scrollburg6" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:padding="5sp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrollburg2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="30dp"
+                    android:padding="5sp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scrollburg5" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrollburg3" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scrollburg5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:padding="5sp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrollburg4" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scrollburg1" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:padding="5sp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scrollburg3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:padding="5sp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scrollburg6" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:padding="5sp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/scrollburg5" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:padding="5sp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scrollburg6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:padding="5sp"
+                    android:src="@drawable/scrollburg1" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scrollburg2" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scrollburg4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scrollburg6" />
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scrollburg3" />
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scrollburg7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scrollburg1" />
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scrollburg3" />
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="30sp"
+                    android:layout_height="100dp"
+                    android:padding="5sp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scrollburg4" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/quickScroll3"
+        android:layout_width="60dp"
+        android:layout_height="522dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandwichLogo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/burgScroll6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg4" />
+
+            <ImageView
+                android:id="@+id/burgScroll7"
+                android:layout_width="match_parent"
+                android:padding="5sp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg3" />
+
+            <ImageView
+                android:id="@+id/burgScroll8"
+                android:layout_width="match_parent"
+                android:padding="5sp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg1" />
+
+            <ImageView
+                android:id="@+id/burgScrolll9"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg2" />
+
+            <ImageView
+                android:id="@+id/burgScroll10"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg5" />
+
+            <ImageView
+                android:id="@+id/burgScroll11"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg6" />
+
+            <ImageView
+                android:id="@+id/burgScroll12"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:padding="5sp"
+                android:src="@drawable/scrollburg7" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/quickScroll4"
+        android:layout_width="60dp"
+        android:layout_height="418dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/sandwichHelp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/drinkScroll6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink1" />
+
+            <ImageView
+                android:id="@+id/drinkScroll7"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink2" />
+
+            <ImageView
+                android:id="@+id/drinkScroll8"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink3" />
+
+            <ImageView
+                android:id="@+id/drinkScroll9"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink4" />
+
+            <ImageView
+                android:id="@+id/drinkScroll10"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink5" />
+
+            <ImageView
+                android:id="@+id/drinkScroll11"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink6" />
+
+            <ImageView
+                android:id="@+id/drinkScroll12"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrolldrink7"
+                app:srcCompat="@drawable/scrolldrink7" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/sandCartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="434dp"
+        android:layout_marginBottom="15dp"
+        android:text="Shopping Cart"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/sandwichCancel"
+        app:layout_constraintStart_toEndOf="@+id/quickScroll3"
+        app:layout_constraintTop_toBottomOf="@+id/sandwichLogo" />
+
+    <TextView
+        android:id="@+id/sandPriceTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="$X.xx"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/sandwichHelp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sandCartText"
+        app:layout_constraintTop_toBottomOf="@+id/quickScroll4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

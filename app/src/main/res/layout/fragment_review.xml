@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reviewLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/craveblack"
+    tools:context=".ReviewFragment">
+
+
+    <ImageView
+        android:id="@+id/reviewAdverts"
+        android:layout_width="411dp"
+        android:layout_height="137dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/advert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/reviewText"
+        android:layout_width="354dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="520dp"
+        android:background="@color/craveblack"
+        android:gravity="center"
+        android:text="Edit or remove items from your order below!"
+        android:textAlignment="center"
+        android:textColor="@color/cravewhite"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeAdverts" />
+
+    <Button
+        android:id="@+id/reviewCancel"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Cancel"
+        android:textColor="@color/craveblack"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dineInButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/reviewPay"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Pay"
+        android:textColor="@color/craveblack"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dineInButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/reviewHelp"
+        android:layout_width="56dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="339dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/cravegreen"
+        android:text="Help"
+        android:textColor="@color/cravewhite"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/reviewLogo"
+        android:layout_width="60dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="522dp"
+        android:contentDescription="logo"
+        android:scaleType="fitXY"
+        android:padding="5sp"
+        android:src="@drawable/logo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/reviewText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeAdverts"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ScrollView
+        android:id="@+id/quickScroll8"
+        android:layout_width="60dp"
+        android:layout_height="522dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/homeCartText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeLogo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/burgScroll27"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg5" />
+
+            <ImageView
+                android:id="@+id/burgScroll28"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg4" />
+
+            <ImageView
+                android:id="@+id/burgScroll29"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg1" />
+
+            <ImageView
+                android:id="@+id/burgScroll30"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg2" />
+
+            <ImageView
+                android:id="@+id/burgScroll31"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg3" />
+
+            <ImageView
+                android:id="@+id/burgScroll32"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrollburg6" />
+
+            <ImageView
+                android:id="@+id/burgScroll33"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5sp"
+                android:src="@drawable/scrollburg7" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/reviewCartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="144dp"
+        android:text="Shopping Cart"
+        android:textColor="@color/cravewhite"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/totalPriceText"
+        app:layout_constraintStart_toEndOf="@+id/quickScroll8"
+        app:layout_constraintTop_toBottomOf="@+id/editItem3button" />
+
+    <TextView
+        android:id="@+id/totalPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="20dp"
+        android:text="$X.xx"
+        android:textColor="@color/cravewhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemTextModifyPrice3" />
+
+    <ImageView
+        android:id="@+id/ReviewItem1"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="32dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/burgersel2"
+        app:layout_constraintBottom_toTopOf="@+id/reviewItem2"
+        app:layout_constraintStart_toEndOf="@+id/quickScroll8"
+        app:layout_constraintTop_toBottomOf="@+id/reviewText" />
+
+    <ImageView
+        android:id="@+id/reviewItem2"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="32dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/scrolldrink7"
+        app:layout_constraintBottom_toTopOf="@+id/reviewItem3"
+        app:layout_constraintStart_toEndOf="@+id/quickScroll8" />
+
+    <ImageView
+        android:id="@+id/reviewItem3"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="71dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/scrolldrink4"
+        app:layout_constraintBottom_toTopOf="@+id/reviewCancel"
+        app:layout_constraintStart_toEndOf="@+id/quickScroll8" />
+
+    <TextView
+        android:id="@+id/itemTextModify1"
+        android:layout_width="178dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="17dp"
+        android:textColor="@color/cravewhite"
+        android:text="Premium Cheeseburger w/ Bacon"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editItem1button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ReviewItem1"
+        app:layout_constraintTop_toBottomOf="@+id/reviewText" />
+
+    <TextView
+        android:id="@+id/itemTextModify2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="30dp"
+        android:text="Small Diet Soft Drink"
+        android:textColor="@color/cravewhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/itemTextModifyPrice2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reviewItem2"
+        app:layout_constraintTop_toBottomOf="@+id/editItem1button" />
+
+    <TextView
+        android:id="@+id/itemTextModify3"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="54dp"
+        android:text="Medium Smoothie"
+        android:textColor="@color/cravewhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/itemTextModifyPrice3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reviewItem3"
+        app:layout_constraintTop_toBottomOf="@+id/itemTextModifyPrice2" />
+
+    <TextView
+        android:id="@+id/itemTextModifyPrice3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="20dp"
+        android:text="$X.xx"
+        android:textColor="@color/cravewhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/reviewItem3"
+        app:layout_constraintTop_toBottomOf="@+id/itemTextModify3" />
+
+    <TextView
+        android:id="@+id/itemTextModifyPrice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:text="$X.xx"
+        android:textColor="@color/cravewhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reviewItem2"
+        app:layout_constraintTop_toBottomOf="@+id/itemTextModify2" />
+
+    <TextView
+        android:id="@+id/itemTextModifyPrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="$X.xx"
+        android:textColor="@color/cravewhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/remItem1button"
+        app:layout_constraintTop_toBottomOf="@+id/itemTextModify1" />
+
+    <Button
+        android:id="@+id/editItem1button"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Edit"
+        android:textColor="@color/craveblack"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toStartOf="@+id/remItem1button"
+        app:layout_constraintStart_toEndOf="@+id/ReviewItem1"
+        app:layout_constraintTop_toBottomOf="@+id/itemTextModify1" />
+
+    <Button
+        android:id="@+id/editItem1button2"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="23dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Edit"
+        android:textColor="@color/craveblack"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/itemTextModify3"
+        app:layout_constraintEnd_toStartOf="@+id/remItem2button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/reviewItem2"
+        app:layout_constraintTop_toBottomOf="@+id/itemTextModify2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/editItem3button"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Edit"
+        android:textColor="@color/craveblack"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/homeCheckout"
+        app:layout_constraintEnd_toStartOf="@+id/remItem3button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/reviewItem3"
+        app:layout_constraintTop_toBottomOf="@+id/itemTextModify3" />
+
+    <Button
+        android:id="@+id/remItem1button"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="27dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Rem"
+        android:textColor="@color/craveblack"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/itemTextModify2"
+        app:layout_constraintStart_toEndOf="@+id/editItem1button"
+        app:layout_constraintTop_toBottomOf="@+id/itemTextModify1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/remItem2button"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="23dp"
+        android:textColor="@color/craveblack"
+        android:backgroundTint="@color/craveorange"
+        android:text="Rem"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/itemTextModify3"
+        app:layout_constraintEnd_toStartOf="@+id/itemTextModifyPrice2"
+        app:layout_constraintTop_toBottomOf="@+id/itemTextModify2" />
+
+    <Button
+        android:id="@+id/remItem3button"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="@color/craveorange"
+        android:text="Rem"
+        android:textColor="@color/craveblack"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/homeCheckout"
+        app:layout_constraintEnd_toStartOf="@+id/itemTextModifyPrice3"
+        app:layout_constraintTop_toBottomOf="@+id/itemTextModify3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
